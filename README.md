@@ -26,7 +26,8 @@ This README generator was designed to run on the server. It retrieves informatio
 
 Link to screen recording:
 
-https://christinastarr19.github.io/gt-scheduler-third-party-apis-homework-05/
+![README generator link]
+https://drive.google.com/file/d/14kIMU3kLyT1ZBVUJeiHF2AwPLwee0Lcy/view
 
 ## Credits
 
