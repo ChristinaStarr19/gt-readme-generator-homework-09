@@ -38,7 +38,7 @@ inquirer.prompt([
         type: "list",
         message: "Which license would you like to add to your README?",
         name: "license",
-        choices: ["mit" , "github"] 
+        choices: ["mit" , "ibm"] 
     },
     {
         type: "input",
@@ -50,5 +50,11 @@ inquirer.prompt([
         message: "Please type your email address.",
         name: "email"
     },
-]).then((response) => {generateMarkdown(response)})
+]).then((response) => {fs.writeFileSync("SampleREADME.md",generateMarkdown(response) , function (err) {
+    if (err) {
+      console.log(err.message);
+    } else {
+      console.log("Your README has been saved");
+    }
+  });})
 
